@@ -4,7 +4,7 @@ The IPL Search API project is a RESTful API that provides information about the 
 
 This README file provides an overview of the IPL Search API project, including its features, installation instructions, endpoints, and usage examples.
 
-<img src="https://github.com/bootcoding-developer/bootcoding-practice-project/blob/main/ipl-search-api/doc/bootcoding-ipl-search-api.png" align="center" width="300">
+<img src="https://github.com/bootcoding-developer/bootcoding-practice-project/blob/main/projects/ipl-search-api/doc/bootcoding-ipl-search-api.png" align="center" width="300">
 
 # Why Bootcoding is building search API
 This project is for students/graduates who want to learn project development in Java using Spring Boot
