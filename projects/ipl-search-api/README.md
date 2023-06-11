@@ -6,7 +6,7 @@ This README file provides an overview of the IPL Search API project, including i
 
 <img src="https://github.com/bootcoding-developer/bootcoding-practice-project/blob/main/projects/ipl-search-api/doc/bootcoding-ipl-search-api.png" align="center" width="300">
 
-# Why Bootcoding is building search API
+# Unboxing Bootcoding's Search API Project
 This project is for students/graduates who want to learn project development in Java using Spring Boot
 
 - Java 11
