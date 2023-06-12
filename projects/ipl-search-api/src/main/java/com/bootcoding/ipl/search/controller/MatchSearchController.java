@@ -31,6 +31,7 @@ public class MatchSearchController {
     })
     @GetMapping("/ipl/matches")
     public ResponseEntity<List<Match>> getAllMatches() {
+
         List<Match> allMatches = searchService.getAllMatches();
         return new ResponseEntity<>(allMatches, HttpStatus.OK);
     }

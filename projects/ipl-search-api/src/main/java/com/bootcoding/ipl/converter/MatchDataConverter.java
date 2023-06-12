@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 public class MatchDataConverter {
 
     public List<Match> convertToMatches(List<String> records){
-        return records.stream().skip(1).map(this::buildMatch).collect(Collectors.toList());
+         return records.stream().skip(1).map(this::buildMatch).collect(Collectors.toList());
     }
 
     public Match buildMatch(String record){
