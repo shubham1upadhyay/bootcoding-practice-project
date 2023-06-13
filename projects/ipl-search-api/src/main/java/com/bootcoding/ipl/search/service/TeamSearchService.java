@@ -1,29 +1,31 @@
 package com.bootcoding.ipl.search.service;
 
-import com.bootcoding.ipl.model.Match;
 import com.bootcoding.ipl.model.Team;
 import com.bootcoding.ipl.search.query.QueryMapper;
-import com.bootcoding.ipl.search.repository.MatchSearchRepository;
-import com.bootcoding.ipl.utils.StringUtility;
+import com.bootcoding.ipl.search.repository.TeamSearchRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.stream.Collectors;
+import java.util.*;
 
 @AllArgsConstructor
 @Service
 public class TeamSearchService {
 
-    private MatchSearchRepository searchRepository;
+    private TeamSearchRepository searchRepository;
     private List<QueryMapper> queryMappers;
 
-    public Collection<Team> getAllTeams(){
-       return searchRepository.findAllTeams();
 
+    public List<Team> getAllTeams() {
+        Collection<Team> teams = searchRepository.findAllTeams();
+        return new ArrayList<>(teams);
     }
 
+    public Optional<Team> getTeamByName(String name) {
+        return searchRepository.findByName(name);
+    }
+
+    public List<Team> search(Map<String, String> params) {
+        return null;
+    }
 }

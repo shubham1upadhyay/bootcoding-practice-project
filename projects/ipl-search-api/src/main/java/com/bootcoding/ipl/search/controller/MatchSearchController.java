@@ -37,6 +37,7 @@ public class MatchSearchController {
         return new ResponseEntity<>(allMatches, HttpStatus.OK);
     }
 
+
     @ApiOperation(value = "Search Match by id", notes = "Search Match with filters")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Returned for successful request")

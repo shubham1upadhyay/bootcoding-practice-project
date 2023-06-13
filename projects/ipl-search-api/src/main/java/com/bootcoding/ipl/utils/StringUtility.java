@@ -22,4 +22,7 @@ public class StringUtility {
         }
         return text;
     }
+    public static String removeSingleQuotes(String str) {
+        return str.replace("'", "");
+    }
 }

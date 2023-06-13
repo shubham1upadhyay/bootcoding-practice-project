@@ -24,7 +24,5 @@ public class MatchSearchRepository {
        return inMemoryData.getMatches().stream().filter(match -> match.getId()==id).findAny();
     }
 
-    public Collection<Team> findAllTeams(){
-        return inMemoryData.getTeams().values();
-    }
+
 }
