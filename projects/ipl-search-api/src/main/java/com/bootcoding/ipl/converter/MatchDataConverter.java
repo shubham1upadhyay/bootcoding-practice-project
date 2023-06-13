@@ -35,8 +35,8 @@ public class MatchDataConverter {
                 .wonBy(data[12])
                 .margin(data[13])
                 .playerOfTheMatch(data[15])
-                .umpire1(data[18])
-                .umpire2(data[19])
+                .umpire1(data[data.length-2])
+                .umpire2(data[data.length-1])
                 .build();
     }
 
