@@ -9,6 +9,7 @@ public class StringUtility {
         return text.replace("\"", "");
     }
 
+
     public String extractFromSquareBrackets(String text, boolean isFirst){
         if(text.contains("[")){
             String substring = "";

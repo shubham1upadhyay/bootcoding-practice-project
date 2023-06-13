@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @RestController
@@ -44,5 +45,16 @@ public class MatchSearchController {
     public ResponseEntity<Optional<Match>> getMatchById(@PathVariable int id) {
         Optional<Match> matchById = searchService.getMatchById(id);
         return new ResponseEntity<>(matchById, HttpStatus.OK);
+    }
+
+    @ApiOperation(value = "Match Search Request", notes = "Find all matches of IPL")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Returned for successful request")
+    })
+    @GetMapping("/ipl/matches/query")
+    public ResponseEntity<List<Match>> searchMatch(@RequestParam Map<String, String> params) {
+
+        List<Match> matches = searchService.search(params);
+        return new ResponseEntity<>(matches, HttpStatus.OK);
     }
 }
