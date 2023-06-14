@@ -32,10 +32,10 @@ public class MatchDataConverter {
                 .tossWinnerTeam(data[8])
                 .tossDecision(data[9])
                 .superOver(getSuperOver(data[10]))
-                .winningTeam(data[11])
+                .winningTeam(data[data.length-4])
                 .wonBy(data[12])
                 .margin(data[13])
-                .playerOfTheMatch(data[15])
+                .playerOfTheMatch(data[data.length-3])
                 .umpire1(data[data.length-2])
                 .umpire2(data[data.length-1])
                 .build();

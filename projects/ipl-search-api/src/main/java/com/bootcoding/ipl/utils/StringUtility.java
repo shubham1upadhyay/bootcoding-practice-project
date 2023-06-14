@@ -1,5 +1,4 @@
 package com.bootcoding.ipl.utils;
-
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
@@ -9,6 +8,11 @@ public class StringUtility {
         return text.replace("\"", "");
     }
 
+
+    public String removeExtraRegex(String s)
+    {
+        return s.replace("]\"", "").replace("'", "").trim();
+    }
 
     public String extractFromSquareBrackets(String text, boolean isFirst){
         if(text.contains("[")){
